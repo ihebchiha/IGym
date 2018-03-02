@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gymapp.ihebchiha.com.igym.RegisterActivity" >
+
+    <TextView
+        android:id="@+id/titleM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="- Inscription -" />
+
+    <EditText
+        android:id="@+id/cintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titleM"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Carte Identite Nationale"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/nomtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cintxt"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Nom du Client"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/prenomtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nomtxt"
+        android:layout_below="@+id/nomtxt"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Prénom du Client"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/adrtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/prenomtxt"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Adresse"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/teltxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/adrtxt"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Téléphone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/usertxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/teltxt"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Nom d'utilisateur"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/passtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usertxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Mot de Passe"
+        android:inputType="textPassword"
+        android:textAlignment="gravity"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/signBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Inscrivez Vous" />
+
+</RelativeLayout>
